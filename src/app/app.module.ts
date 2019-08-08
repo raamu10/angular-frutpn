@@ -7,6 +7,9 @@ import { HelloComponent } from './hello.component';
 
 import { ParentDivComponent } from './test/parentdiv.component';
 import { ChildDivComponent } from './test/childdiv.component';
+import { SiblingDivComponent } from './test/siblingdiv.component';
+
+import { DataService } from './test/data.service';
 
 
 @NgModule({
@@ -15,7 +18,11 @@ import { ChildDivComponent } from './test/childdiv.component';
     AppComponent,
     HelloComponent,
     ParentDivComponent,
-    ChildDivComponent
+    ChildDivComponent,
+    SiblingDivComponent
+  ],
+  providers: [
+    DataService
   ],
   bootstrap:    [ AppComponent ]
 })
